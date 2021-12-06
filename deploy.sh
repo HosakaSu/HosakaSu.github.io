@@ -28,7 +28,7 @@ initGit(){
   git commit -m "${msg}"
 }
 initGit
-# git push -f $githubUrl master # 推送到github
+# git push -f $githubUrl master # 推送到github  
 git push -f git@github.com:HosakaSu/HosakaSu.github.io.git master:gh-pages
 
 cd -
