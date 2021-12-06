@@ -9,7 +9,7 @@ initDist(){
   cd docs/.vuepress/dist
 }
 
-initDist "module.exports = '/HosakaSu.github.io/'"
+# initDist "module.exports = '/HosakaSu.github.io/'"
 
 # deploy to github
 if [ -z "$GITHUB_TOKEN" ]; then
@@ -29,7 +29,7 @@ initGit(){
 }
 initGit
 # git push -f $githubUrl master # 推送到github  
-git push -f git@github.com:HosakaSu/HosakaSu.github.io.git master:gh-pages
+git push -f $githubUrl master:gh-pages
 
 cd -
 rm -rf docs/.vuepress/dist
